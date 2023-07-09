@@ -1,0 +1,533 @@
+{
+  "1": [
+    {
+      "id": 1,
+      "name": "Cat6",
+      "inStock": 2548,
+      "ordered": 63,
+      "description": "Ethernet cable with transfer speeds up to 10gbps and max distance of 180 feet."
+    },
+    {
+      "id": 2,
+      "name": "Printer",
+      "inStock": 15,
+      "ordered": 2,
+      "description": "Prints documents on paper."
+    },
+    {
+      "id": 3,
+      "name": "Keyboard",
+      "inStock": 100,
+      "ordered": 30,
+      "description": "Types words into computer documents and controls operating system."
+    },
+    {
+      "id": 4,
+      "name": "Mouse",
+      "inStock": 250,
+      "ordered": 30,
+      "description": "moves pointer on monitor screen and clicks on things."
+    },
+    {
+      "id": 5,
+      "name": "Monitor",
+      "inStock": 60,
+      "ordered": 30,
+      "description": "Displays contents of your computer on the screen.\n(do not throw out window)"
+    },
+    {
+      "id": 6,
+      "name": "Cat5e",
+      "inStock": 4290,
+      "ordered": 200,
+      "description": "Ethernet cable with transfer speeds up to 1000mbps and max distance of 328 feet."
+    },
+    {
+      "id": 7,
+      "name": "Cat5",
+      "inStock": 5372,
+      "ordered": 0,
+      "description": "Ethernet cable with transfer speeds up to 10/100mbps and max distance of 328 feet."
+    },
+    {
+      "id": 8,
+      "name": "Speakers",
+      "inStock": 482,
+      "ordered": 10,
+      "description": "Plays sound up to a volume to make your neighbors angry."
+    },
+    {
+      "id": 9,
+      "name": "Web Cam",
+      "inStock": 292,
+      "ordered": 30,
+      "description": "Usefull for streaming, interviews, and live meetings."
+    },
+    {
+      "id": 10,
+      "name": "External SSD",
+      "inStock": 2719,
+      "ordered": 120,
+      "description": "Useful for making local backups of data at high speeds."
+    },
+    {
+      "id": 11,
+      "name": "External Hard Drive",
+      "inStock": 3192,
+      "ordered": 40,
+      "description": "Useful for making local backups of data."
+    },
+    {
+      "id": 12,
+      "name": "UPS",
+      "inStock": 187,
+      "ordered": 20,
+      "description": "When the power goes out, these things will keep your devices on."
+    },
+    {
+      "id": 13,
+      "name": "Modem",
+      "inStock": 823,
+      "ordered": 3,
+      "description": "Transfers data between ISP and your router."
+    },
+    {
+      "id": 14,
+      "name": "Router",
+      "inStock": 674,
+      "ordered": 4,
+      "description": "Transfers data between your modem and your computers."
+    },
+    {
+      "id": 15,
+      "name": "Switch",
+      "inStock": 583,
+      "ordered": 2,
+      "description": "Useful for large networks configured with subnets."
+    },
+    {
+      "id": 16,
+      "name": "Motherboard",
+      "inStock": 298,
+      "ordered": 30,
+      "description": "Main circuit board for a computer."
+    },
+    {
+      "id": 17,
+      "name": "CPU",
+      "inStock": 392,
+      "ordered": 40,
+      "description": "Processes machine language to run your applications."
+    },
+    {
+      "id": 18,
+      "name": "RAM",
+      "inStock": 8204,
+      "ordered": 300,
+      "description": "Stores volitile memory to be used by computer applications."
+    },
+    {
+      "id": 19,
+      "name": "Graphics Card",
+      "inStock": 1,
+      "ordered": 9001,
+      "description": "Used to transfer visual data from your computer to your monitor."
+    },
+    {
+      "id": 20,
+      "name": "Internal SSD",
+      "inStock": 473,
+      "ordered": 40,
+      "description": "Stores non volitile memory to store your applications at high speeds."
+    },
+    {
+      "id": 21,
+      "name": "Internal Hard Drive",
+      "inStock": 23,
+      "ordered": 5,
+      "description": "Stores non volitile memory to store your applications on discs."
+    },
+    {
+      "id": 22,
+      "name": "Computer Power Supply",
+      "inStock": 382,
+      "ordered": 40,
+      "description": "Gives power to all your computer components."
+    },
+    {
+      "id": 23,
+      "name": "Computer Case",
+      "inStock": 837,
+      "ordered": 40,
+      "description": "Stores all required computer components inside."
+    },
+    {
+      "id": 24,
+      "name": "Laptop",
+      "inStock": 739,
+      "ordered": 10,
+      "description": "Mobile computer used mostly for traveling."
+    },
+    {
+      "id": 25,
+      "name": "Laptop Bag",
+      "inStock": 930,
+      "ordered": 10,
+      "description": "Stores laptop for easy carrying while traveling."
+    }
+  ],
+  "2": [
+    {
+      "id": 1,
+      "name": "Pickaxe",
+      "inStock": 30,
+      "ordered": 0,
+      "description": "Breaks apart hard surfaces."
+    },
+    {
+      "id": 2,
+      "name": "Hammer",
+      "inStock": 2932,
+      "ordered": 1,
+      "description": "Drives the neighbors crazy if used at night."
+    },
+    {
+      "id": 3,
+      "name": "Saw",
+      "inStock": 138,
+      "ordered": 0,
+      "description": "Not a movie."
+    },
+    {
+      "id": 4,
+      "name": "Anvil",
+      "inStock": 15,
+      "ordered": 1,
+      "description": "Crafts really nice things."
+    },
+    {
+      "id": 5,
+      "name": "Drill",
+      "inStock": 51,
+      "ordered": 3,
+      "description": "Puts holes in things."
+    },
+    {
+      "id": 6,
+      "name": "Iron Ore",
+      "inStock": 47293,
+      "ordered": 1942,
+      "description": "Used for crafting higher materials."
+    },
+    {
+      "id": 7,
+      "name": "Coal",
+      "inStock": 371295,
+      "ordered": 8210,
+      "description": "Used for crafting higher materials."
+    },
+    {
+      "id": 8,
+      "name": "Charcoal",
+      "inStock": 62942,
+      "ordered": 4028,
+      "description": "Used for crafting higher materials."
+    },
+    {
+      "id": 9,
+      "name": "Suede",
+      "inStock": 698274,
+      "ordered": 7204,
+      "description": "Used for crafting higher materials."
+    },
+    {
+      "id": 10,
+      "name": "Stem",
+      "inStock": 58723052,
+      "ordered": 52930,
+      "description": "Used for crafting bows and arrows."
+    },
+    {
+      "id": 11,
+      "name": "Durable Metal Plate",
+      "inStock": 5024,
+      "ordered": 203,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 12,
+      "name": "Oriharukon Ore",
+      "inStock": 4902,
+      "ordered": 763,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 13,
+      "name": "Metal Hardener",
+      "inStock": 8273,
+      "ordered": 682,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 14,
+      "name": "Mithril Ore",
+      "inStock": 49283,
+      "ordered": 659,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 15,
+      "name": "Metallic Thread",
+      "inStock": 2710,
+      "ordered": 208,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 16,
+      "name": "Adamantite Nugget",
+      "inStock": 1842,
+      "ordered": 89,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 17,
+      "name": "Thread",
+      "inStock": 3710475,
+      "ordered": 39328,
+      "description": "Used for crafting Metallic Thread."
+    },
+    {
+      "id": 18,
+      "name": "Crafted Leather",
+      "inStock": 4017,
+      "ordered": 592,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 19,
+      "name": "Leather",
+      "inStock": 37021,
+      "ordered": 2810,
+      "description": "Used for crafting equipment and Crafted Leather."
+    },
+    {
+      "id": 20,
+      "name": "Metallic Fiber",
+      "inStock": 8304,
+      "ordered": 381,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 21,
+      "name": "Silver Nugget",
+      "inStock": 47103,
+      "ordered": 2981,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 22,
+      "name": "Cord",
+      "inStock": 7203943,
+      "ordered": 81840,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 23,
+      "name": "Braided Hemp",
+      "inStock": 5021,
+      "ordered": 498,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 24,
+      "name": "Enra",
+      "inStock": 2713,
+      "ordered": 184,
+      "description": "Used for crafting equipment."
+    },
+    {
+      "id": 25,
+      "name": "Steel",
+      "inStock": 58203,
+      "ordered": 2691,
+      "description": "Used for crafting equipment."
+    }
+  ],
+  "3": [
+    {
+      "id": 1,
+      "name": "Pair Of Shoes",
+      "inStock": 1272,
+      "ordered": 52,
+      "description": "Makes walking outside safe."
+    },
+    {
+      "id": 2,
+      "name": "Shirt",
+      "inStock": 321,
+      "ordered": 20,
+      "description": "Covers torso area."
+    },
+    {
+      "id": 3,
+      "name": "Pants",
+      "inStock": 271,
+      "ordered": 8,
+      "description": "Don't leave home without them."
+    },
+    {
+      "id": 4,
+      "name": "Socks",
+      "inStock": 1742,
+      "ordered": 100,
+      "description": "Protect feet and ankles from shoo attacks and ankle biters."
+    },
+    {
+      "id": 5,
+      "name": "Hat",
+      "inStock": 823,
+      "ordered": 3,
+      "description": "Protect head and eyes on a bright sunny day."
+    },
+    {
+      "id": 6,
+      "name": "Leather Armor",
+      "inStock": 492,
+      "ordered": 12,
+      "description": "Better defense than a Shirt."
+    },
+    {
+      "id": 7,
+      "name": "Chain Mail",
+      "inStock": 693,
+      "ordered": 6,
+      "description": "Strong and flexible."
+    },
+    {
+      "id": 8,
+      "name": "Iron Mail",
+      "inStock": 482,
+      "ordered": 4,
+      "description": "Heavy and good protection."
+    },
+    {
+      "id": 9,
+      "name": "Steel Mail",
+      "inStock": 104,
+      "ordered": 3,
+      "description": "Heavier than Iron Mail and better protection."
+    },
+    {
+      "id": 10,
+      "name": "Silver Vest",
+      "inStock": 923,
+      "ordered": 5,
+      "description": "Light and strong protection."
+    },
+    {
+      "id": 11,
+      "name": "Gold Mail",
+      "inStock": 794,
+      "ordered": 10,
+      "description": "Best torso equipment."
+    },
+    {
+      "id": 12,
+      "name": "Leather Cap",
+      "inStock": 502,
+      "ordered": 13,
+      "description": "Better defense than a Hat."
+    },
+    {
+      "id": 13,
+      "name": "Helmet",
+      "inStock": 490,
+      "ordered": 6,
+      "description": "Good for soldiers going into battle."
+    },
+    {
+      "id": 14,
+      "name": "Steel Helmet",
+      "inStock": 264,
+      "ordered": 8,
+      "description": "Good for commanders leading soldiers into battle."
+    },
+    {
+      "id": 15,
+      "name": "Silver Helmet",
+      "inStock": 491,
+      "ordered": 7,
+      "description": "Light and good protection for the best soldiers."
+    },
+    {
+      "id": 16,
+      "name": "Gold Helmet",
+      "inStock": 503,
+      "ordered": 5,
+      "description": "A helmet designed for a king."
+    },
+    {
+      "id": 17,
+      "name": "Leather Pants",
+      "inStock": 582,
+      "ordered": 11,
+      "description": "Better defense than Pants."
+    },
+    {
+      "id": 18,
+      "name": "Iron Gaiters",
+      "inStock": 498,
+      "ordered": 9,
+      "description": "Heavy and good protection."
+    },
+    {
+      "id": 19,
+      "name": "Steel Gaiters",
+      "inStock": 245,
+      "ordered": 7,
+      "description": "Heavier than Iron Gaiters and better protection."
+    },
+    {
+      "id": 20,
+      "name": "Silver Gaiters",
+      "inStock": 964,
+      "ordered": 6,
+      "description": "Light and good protection."
+    },
+    {
+      "id": 21,
+      "name": "Gold Gaiters",
+      "inStock": 823,
+      "ordered": 14,
+      "description": "Best equipment one can get."
+    },
+    {
+      "id": 22,
+      "name": "Leather Shoes",
+      "inStock": 284,
+      "ordered": 16,
+      "description": "Better defense than a Pair of Shoes."
+    },
+    {
+      "id": 23,
+      "name": "Iron Grieves",
+      "inStock": 523,
+      "ordered": 8,
+      "description": "Heavy and good protection."
+    },
+    {
+      "id": 24,
+      "name": "Steel Grieves",
+      "inStock": 276,
+      "ordered": 4,
+      "description": "Heavier than Iron Grieves and better protection."
+    },
+    {
+      "id": 25,
+      "name": "Gold Grieves",
+      "inStock": 184,
+      "ordered": 10,
+      "description": "Best equipment one can get."
+    }
+  ]
+}
