@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ecc34040-162d-11ee-be56-0242ac120002",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJVc2VybmFtZSI6ImZpZGRsZXIiLCJleHAiOjQxMTc5MjM0ODksImlhdCI6MTY4ODAwOTg4OX0.DFj3nRggZ1fhOyFic5sHxVA4C9XMeIzSxUEh_jrB67o",
+    "username": "fiddler",
+    "password": "password1",
+    "displayName": "Tinker",
+    "firstName": "Tina",
+    "lastName": "Tracer",
+    "email": "tina.tracer@test.com"
+  },
+  {
+    "id": "ecc34540-162d-11ee-be56-0242ac120002",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJVc2VybmFtZSI6ImNyYWZ0ZXIiLCJleHAiOjQxMTc5MjM0ODksImlhdCI6MTY4ODAwOTg4OX0.YAphl4XdkZfhUknUKJZb6MnFa7bsmPwhpMiLhyuwQP4",
+    "username": "crafter",
+    "password": "password2",
+    "displayName": "Broken Hammer",
+    "firstName": "Nick",
+    "lastName": "Loranzo",
+    "email": "nick.loranzo@test.com"
+  },
+  {
+    "id": "ecc34676-162d-11ee-be56-0242ac120002",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJVc2VybmFtZSI6ImVjb3NhdmVyIiwiZXhwIjo0MTE3OTIzNDg5LCJpYXQiOjE2ODgwMDk4ODl9.3yn5qlvylFpEZdzf7lE5IPsK1_KNJM2qcJ1bzfc2oTw",
+    "username": "ecosaver",
+    "password": "password3",
+    "displayName": "Smart Shot",
+    "firstName": "Wes",
+    "lastName": "Turner",
+    "email": "wes.turner@test.com"
+  }
+]
