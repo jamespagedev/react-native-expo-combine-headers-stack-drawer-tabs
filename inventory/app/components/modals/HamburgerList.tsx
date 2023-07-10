@@ -17,10 +17,9 @@ export default function HamburgerList() {
     <ModalMainView isOpen={isHamburgerOpen} toggleModal={toggleHamburger}>
       <Pressable
         style={styles.row}
-        onPress={() => {
-          toggleHamburger();
-          navigation.navigate(screenNavigations.settings.route as never);
-        }}
+        onPress={() =>
+          navigation.navigate(screenNavigations.settings.route as never)
+        }
       >
         <Text style={styles.font}>
           {screenNavigations.settings.screenTitle}
@@ -28,10 +27,9 @@ export default function HamburgerList() {
       </Pressable>
       <Pressable
         style={styles.row}
-        onPress={() => {
-          toggleHamburger();
-          navigation.navigate(screenNavigations.dashboard.route as never);
-        }}
+        onPress={() =>
+          navigation.navigate(screenNavigations.dashboard.route as never)
+        }
       >
         <Text style={styles.font}>
           {screenNavigations.dashboard.screenTitle}
@@ -39,10 +37,9 @@ export default function HamburgerList() {
       </Pressable>
       <Pressable
         style={styles.row}
-        onPress={() => {
-          toggleHamburger();
-          navigation.navigate(screenNavigations.orderShop.route as never);
-        }}
+        onPress={() =>
+          navigation.navigate(screenNavigations.orderShop.route as never)
+        }
       >
         <Text style={styles.font}>
           {screenNavigations.orderShop.screenTitle}
@@ -50,22 +47,15 @@ export default function HamburgerList() {
       </Pressable>
       <Pressable
         style={styles.row}
-        onPress={() => {
-          toggleHamburger();
-          navigation.navigate(screenNavigations.browseProducts.route as never);
-        }}
+        onPress={() =>
+          navigation.navigate(screenNavigations.browseProducts.route as never)
+        }
       >
         <Text style={styles.font}>
           {screenNavigations.browseProducts.screenTitle}
         </Text>
       </Pressable>
-      <Pressable
-        style={styles.row}
-        onPress={() => {
-          toggleHamburger();
-          logout();
-        }}
-      >
+      <Pressable style={styles.row} onPress={() => logout()}>
         <Text style={styles.font}>Logout</Text>
       </Pressable>
     </ModalMainView>

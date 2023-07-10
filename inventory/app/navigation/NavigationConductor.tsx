@@ -1,7 +1,11 @@
 import React, { ReactNode } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { useLoadingStore, useSettingsStore } from "@app/stores";
+import {
+  useHamburgerStore,
+  useLoadingStore,
+  useSettingsStore,
+} from "@app/stores";
 import { Auth, InitialSettings, Loading, Main } from "@app/navigation/groups";
 import {
   getInitialroute,
@@ -31,10 +35,12 @@ export default function NavigationConductor() {
   const { isLoadingApp } = useLoadingStore((store) => store);
   const { isViewerAuthenticated, logout } = useViewerStore((store) => store);
   const { settings } = useSettingsStore((store) => store);
+  const { closeHamburger } = useHamburgerStore((store) => store);
   return (
     <NavigationContainer>
       <Stack.Navigator
         initialRouteName={getInitialroute(isLoadingApp, isViewerAuthenticated)}
+        screenListeners={{ state: () => closeHamburger() }}
         screenOptions={({ route }) =>
           getNavigatorScreenOptions(route.name, logout)
         }
