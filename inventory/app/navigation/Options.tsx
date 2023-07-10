@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-native";
-import { BtnLogin, BtnSignup } from "@app/components";
+import { BtnLogin, BtnSignup, Hamburger } from "@app/components";
 import { screenNavigations } from "@app/utils";
 
 const screenAuthRoutes = new Set([
@@ -8,13 +8,16 @@ const screenAuthRoutes = new Set([
   screenNavigations.signup.route,
 ]);
 
-const screenNoBackRoutes = new Set([
-  screenNavigations.initialSettings.route,
+const screenNoBackWithHamburgerRoutes = new Set([
   screenNavigations.orderResults.route,
   screenNavigations.dashboard.route,
 ]);
 
-const screenSlideRoutes = new Set([
+const screenNoBackRoutesAndLogout = new Set([
+  screenNavigations.initialSettings.route,
+]);
+
+const screenSlideWithHamburgerRoutes = new Set([
   screenNavigations.browseProductDetails.route,
   screenNavigations.orderProducts.route,
   screenNavigations.orderReview.route,
@@ -39,7 +42,23 @@ function getAuthNavigatorScreenOptions(routeName: string): any {
   };
 }
 
-function getNoBackNavigatorScreenOptions(logout: () => Promise<void>): any {
+function getNoBackWithHamburgerNavigatorScreenOptions(): any {
+  return {
+    headerTitleAlign: "center",
+    headerStyle: { backgroundColor: "#010409" },
+    headerRightContainerStyle: { paddingRight: 10 },
+    headerLeftContainerStyle: { paddingLeft: 10 },
+    headerTitleStyle: { color: "#ffffff" },
+    headerTintColor: "#ffffff",
+    headerBackVisible: false,
+    headerLeft: () => null,
+    headerRight: () => <Hamburger />,
+  };
+}
+
+function getNoBackWithLogoutNavigatorScreenOptions(
+  logout: () => Promise<void>
+): any {
   return {
     headerTitleAlign: "center",
     headerStyle: { backgroundColor: "#010409" },
@@ -53,7 +72,7 @@ function getNoBackNavigatorScreenOptions(logout: () => Promise<void>): any {
   };
 }
 
-function getSlideNavigatorScreenOptions(logout: () => Promise<void>): any {
+function getSlideWithHamburgerNavigatorScreenOptions(): any {
   return {
     headerTitleAlign: "center",
     headerStyle: { backgroundColor: "#010409" },
@@ -64,11 +83,11 @@ function getSlideNavigatorScreenOptions(logout: () => Promise<void>): any {
     gestureResponseDistance: 20,
     gestureEnabled: true,
     gestureDirection: "horizontal",
-    headerRight: () => <Button onPress={logout} title="Logout" />,
+    headerRight: () => <Hamburger />,
   };
 }
 
-function getDefaultNavigatorScreenOptions(logout: () => Promise<void>): any {
+function getDefaultNavigatorScreenOptions(): any {
   return {
     headerTitleAlign: "center",
     headerStyle: { backgroundColor: "#010409" },
@@ -76,7 +95,7 @@ function getDefaultNavigatorScreenOptions(logout: () => Promise<void>): any {
     headerLeftContainerStyle: { paddingLeft: 10 },
     headerTitleStyle: { color: "#ffffff" },
     headerTintColor: "#ffffff",
-    headerRight: () => <Button onPress={logout} title="Logout" />,
+    headerRight: () => <Hamburger />,
   };
 }
 
@@ -126,20 +145,23 @@ export function getNavigatorScreenOptions(
   routeName: string,
   logout: () => Promise<void>
 ): any {
-  if (screenAuthRoutes.has(routeName))
+  if (screenAuthRoutes.has(routeName)) {
     return getAuthNavigatorScreenOptions(routeName);
-  if (screenNoBackRoutes.has(routeName))
-    return getNoBackNavigatorScreenOptions(logout);
-  if (screenSlideRoutes.has(routeName))
-    return getSlideNavigatorScreenOptions(logout);
-  return getDefaultNavigatorScreenOptions(logout);
+  } else if (screenNoBackWithHamburgerRoutes.has(routeName)) {
+    return getNoBackWithHamburgerNavigatorScreenOptions();
+  } else if (screenNoBackRoutesAndLogout.has(routeName)) {
+    return getNoBackWithLogoutNavigatorScreenOptions(logout);
+  } else if (screenSlideWithHamburgerRoutes.has(routeName)) {
+    return getSlideWithHamburgerNavigatorScreenOptions();
+  }
+  return getDefaultNavigatorScreenOptions();
 }
 
 export function getStackScreenOptions(route: string, screenTitle: string): any {
   if (route === screenNavigations.loading.route) {
     return getHideHeaderStackScreenOptions();
   }
-  if (screenSlideRoutes.has(route)) {
+  if (screenSlideWithHamburgerRoutes.has(route)) {
     return getSlideStackScreenOptions(screenTitle);
   }
   return getDefaultStackScreenOptions(screenTitle);

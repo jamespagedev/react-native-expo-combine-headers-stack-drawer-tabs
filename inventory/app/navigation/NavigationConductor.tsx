@@ -48,26 +48,3 @@ export default function NavigationConductor() {
     </NavigationContainer>
   );
 }
-
-/* ToDo: loading modal(see "common modal screens")
-<Stack.Navigator>
-  {isLoggedIn ? (
-    // Screens for logged in users
-    <Stack.Group>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Profile" component={Profile} />
-    </Stack.Group>
-  ) : (
-    // Auth screens
-    <Stack.Group screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="SignIn" component={SignIn} />
-      <Stack.Screen name="SignUp" component={SignUp} />
-    </Stack.Group>
-  )}
-  // Common modal screens
-  <Stack.Group screenOptions={{ presentation: 'modal' }}>
-    <Stack.Screen name="Help" component={Help} />
-    <Stack.Screen name="Invite" component={Invite} />
-  </Stack.Group>
-</Stack.Navigator>
-*/

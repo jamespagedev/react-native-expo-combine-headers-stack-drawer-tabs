@@ -9,18 +9,27 @@ import {
   StackNavigationEventMap,
   StackNavigationOptions,
 } from "@react-navigation/stack";
-import { StackNavigationConfig } from "@react-navigation/stack/lib/typescript/src/types";
+import {
+  StackNavigationConfig,
+  StackNavigationProp,
+} from "@react-navigation/stack/lib/typescript/src/types";
 
 export interface ScreenNavigations {
   [key: string]: { route: string; screenTitle: string };
 }
 
 export type StackParamsList = {
-  Login: undefined;
+  BrowseProductDetails: undefined;
+  BrowseProducts: undefined;
   Dashboard: undefined;
-  Products: undefined;
-  Review: undefined;
-  Shop: undefined;
+  Loading: { msg: string };
+  Login: undefined;
+  OrderProducts: undefined;
+  OrderResults: undefined;
+  OrderReview: undefined;
+  OrderShop: undefined;
+  Settings: undefined;
+  Signup: undefined;
 };
 
 type NavigationStackProps = DefaultNavigatorOptions<
